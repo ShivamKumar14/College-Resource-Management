@@ -1,0 +1,10 @@
+OUTPUT_NAME := "college_resource"
+
+all:
+	@echo 'Author: Shivam Kumar and Team'
+	g++ -o $(OUTPUT_NAME) ./MInor/*.cpp
+	@echo 'Finished Building.'
+	@echo '>>You can run the program using `./'$(OUTPUT_NAME)'` \n>>and you clean using `make clean`'
+
+clean: 
+	rm -rf $(OUTPUT_NAME)
